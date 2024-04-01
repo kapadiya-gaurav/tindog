@@ -1,0 +1,198 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.gradient-background {
+  background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+h2 {
+  font-weight: 400;
+  line-height: 1.8;
+}
+
+h3 {
+  font-weight: 600;
+}
+
+p {
+  color: #8f8f8f;
+}
+
+/* nav bar */
+.container-fluid {
+  padding: 3% 15% 7%;
+}
+
+#title h1 {
+  font-weight: 900;
+  line-height: 1.5;
+  font-size: 3rem;
+  color: #fff;
+}
+
+.navbar {
+  margin-bottom: 4.5rem;
+}
+
+.navbar-brand {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
+.nav-item {
+  padding: 0 1.8rem;
+  font-weight: 600;
+}
+
+.download-btn {
+  margin: 5% 3% 5% 0%;
+}
+
+.title-img {
+  width: 17%;
+  transform: rotate(25deg);
+  position: absolute;
+  right: 25%;
+}
+
+/* <!-- Features --> */
+#features {
+  padding: 7% 15%;
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+.Features-icon {
+  color: #ff4c68;
+  font-size: 40px;
+}
+
+.Features-icon:hover {
+  color: rgb(172, 57, 74);
+  transition: 1s ease-out;
+}
+
+.Features-box {
+  text-align: center;
+}
+
+/* <!-- Testimonials --> */
+#testimonials {
+  text-align: center;
+  color: #fff;
+}
+
+.testimonial-image {
+  width: 10%;
+  border-radius: 100%;
+  margin: 5px;
+}
+
+.carousel-item {
+  padding: 3% 3%;
+}
+
+#press {
+  text-align: center;
+  padding-bottom: 3%;
+}
+
+#press img {
+  width: 10%;
+  margin-inline: 50px;
+}
+
+#press img:nth-child(3) {
+  width: 20%;
+}
+
+#press img:nth-child(4) {
+  width: 7%;
+}
+
+/* <!-- Pricing --> */
+#pricing {
+  padding: 3%;
+  text-align: center;
+}
+
+#pricing-plan {
+  align-items: center;
+}
+
+.pricing-col {
+  padding-top: 25px;
+}
+
+.card {
+  min-height: 370px;
+}
+
+/* <!-- Call to Action --> */
+#cta {
+  background-color: #ff4c68;
+  padding-top: 80px;
+  text-align: center;
+}
+
+#cta h3 {
+  color: #fff;
+  font-size: 2.5rem;
+}
+
+/* <!-- Footer --> */
+#footer {
+  text-align: center;
+  margin-top: 15px;
+}
+
+#footer a {
+  margin-inline: 10px;
+  color: black;
+}
+
+#footer p {
+  font-size: smaller;
+  margin-top: 10px;
+}
+
+/* media q   */
+@media (max-width: 1004px) {
+  #title {
+    text-align: center;
+  }
+
+  .flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title-img {
+    position: static;
+    transform: rotate(13);
+    width: 80%;
+    margin-top: 35px;
+  }
+}
